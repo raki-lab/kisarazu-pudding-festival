@@ -34,4 +34,4 @@ export function list<T>(key: ContentListKey): T[] {
   return value as T[]
 }
 
-export type { HighlightItem, VendorItem, LegendItem, FaqItem } from './types'
+export type { HighlightItem, VendorItem, LegendItem, FaqItem, ScheduleItem } from './types'

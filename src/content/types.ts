@@ -26,6 +26,12 @@ export interface FaqItem {
   a: string
 }
 
+export interface ScheduleItem {
+  time: string
+  title: string
+  description: string
+}
+
 export interface Content {
   nav: {
     brand: string
@@ -35,7 +41,6 @@ export interface Content {
       access: string
       faq: string
     }
-    cta: string
   }
   venue: {
     name: string
@@ -48,7 +53,6 @@ export interface Content {
     rainNote: string
   }
   hero: {
-    badge: string
     title: string
     lead: string
     metaLabels: {
@@ -82,6 +86,16 @@ export interface Content {
     title: string
     venueName: string
     address: string
+    addressLabel: string
+    trainLabel: string
+    train: string
+    carLabel: string
+    car: string
+  }
+  schedule: {
+    title: string
+    note: string
+    items: ScheduleItem[]
   }
   faq: {
     title: string
@@ -90,20 +104,12 @@ export interface Content {
   contact: {
     title: string
     text: string
-    email: string
-    emailCta: string
     backToTop: string
-    organizerLabel: string
-    organizer: string
-    hoursLabel: string
-    hours: string
     snsTitle: string
     instagramLabel: string
     instagramUrl: string
     xLabel: string
     xUrl: string
-    sponsorRecruitTitle: string
-    sponsorRecruitText: string
   }
   footer: {
     copy: string

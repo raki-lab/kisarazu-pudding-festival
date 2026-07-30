@@ -9,7 +9,6 @@ nav:
     venueMap: "会場マップ"
     access: "アクセス"
     faq: "FAQ"
-  cta: "お問い合わせ"
 
 # 会場名・住所はここ1箇所を直せば、使っている全ての箇所に反映されます
 venue:
@@ -23,7 +22,6 @@ event:
   rainNote: "荒天の場合は10月25日(日)に順延（予備日）"
 
 hero:
-  badge: "🍮 木更津・まちなかプリンの祭典"
   title: "木更津\nプリンフェスティバル"
   lead: "とろける、まざる、つながる。\n木更津の名店が集う、あまくてやさしい一日。"
   metaLabels:
@@ -236,6 +234,37 @@ access:
   title: "アクセス"
   venueName: "イオンモール木更津"
   address: "〒292-0835 千葉県木更津市築地1-4"
+  addressLabel: "住所"
+  trainLabel: "電車"
+  train: "JR内房線「木更津駅」西口から徒歩約15分"
+  carLabel: "お車"
+  car: "館山自動車道「木更津南IC」から約10分（イオンモール木更津駐車場をご利用ください）"
+
+schedule:
+  title: "ステージスケジュール"
+  note: "出演者・内容は決定次第更新します（下記は仮スケジュールです）"
+  items:
+    - time: "10:00 - 10:20"
+      title: "オープニングセレモニー"
+      description: "実行委員会あいさつと開催宣言"
+    - time: "10:30 - 11:15"
+      title: "地元アーティストライブ①"
+      description: "木更津ゆかりのアーティストによるオープニングライブ"
+    - time: "11:30 - 12:00"
+      title: "ご当地キャラクターショー"
+      description: "親子で楽しめるキャラクターステージ"
+    - time: "13:00 - 13:40"
+      title: "プリン早食い選手権"
+      description: "参加者による早食いバトル、観覧自由"
+    - time: "14:00 - 14:45"
+      title: "地元アーティストライブ②"
+      description: "午後のステージを盛り上げるライブ第2部"
+    - time: "15:00 - 15:30"
+      title: "抽選会"
+      description: "スタンプラリー抽選会と協賛企業賞品の発表"
+    - time: "16:00 - 16:30"
+      title: "フィナーレライブ"
+      description: "出演者総出演によるクロージングステージ"
 
 faq:
   title: "よくある質問"
@@ -261,21 +290,13 @@ faq:
 
 contact:
   title: "SNS・お問い合わせ"
-  text: "取材のお申し込みやその他ご質問など、\nお気軽にお問い合わせください。"
-  email: "info@kisarazu-pudding.example"
-  emailCta: "メールで問い合わせる"
+  text: "取材のお申し込みやその他ご質問など、\n公式Instagram（@kisarazupurin）のDMまでお気軽にご連絡ください。"
   backToTop: "ページの先頭へ戻る"
-  organizerLabel: ""
-  organizer: ""
-  hoursLabel: ""
-  hours: ""
   snsTitle: "公式SNS"
   instagramLabel: "Instagram"
   instagramUrl: "https://www.instagram.com/kisarazupurin/"
   xLabel: "X (Twitter)"
   xUrl: "https://x.com/"
-  sponsorRecruitTitle: "協賛をご希望の方へ"
-  sponsorRecruitText: "協賛にご興味をお持ちの企業様は、上記メールアドレスまでお気軽にご連絡ください。"
 
 footer:
   copy: "© 2026 Kisarazu Pudding Festival Committee"

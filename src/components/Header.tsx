@@ -24,9 +24,6 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <a className="nav__cta btn btn--primary" href="#contact">
-          {t('nav.cta') /* お問い合わせ */}
-        </a>
         <button
           type="button"
           className={`nav__toggle${open ? ' is-open' : ''}`}
@@ -47,13 +44,6 @@ export function Header() {
               {t(`nav.links.${link.key}`)}
             </a>
           ))}
-          <a
-            className="mobile-nav__cta btn btn--primary"
-            href="#contact"
-            onClick={() => setOpen(false)}
-          >
-            {t('nav.cta') /* お問い合わせ */}
-          </a>
         </nav>
       )}
     </header>

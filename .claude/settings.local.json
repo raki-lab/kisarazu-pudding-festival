@@ -135,7 +135,27 @@
       "WebFetch(domain:www.aeonmall.com)",
       "PowerShell(wsl rm /home/ryota/projects/kisarazu-pudding-festival/src/components/EventOverview.tsx)",
       "PowerShell(wsl bash -lc \"sudo -n true 2>&1 && echo PASSWORDLESS_SUDO_OK || echo NEED_PASSWORD\")",
-      "PowerShell(wsl bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npm run lint 2>&1 | tail -n 60 && echo ---BUILD--- && npm run build 2>&1 | tail -n 100\")"
+      "PowerShell(wsl bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npm run lint 2>&1 | tail -n 60 && echo ---BUILD--- && npm run build 2>&1 | tail -n 100\")",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"public\\\\mascot-1.png\"\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npx tsc --noEmit -p tsconfig.app.json 2>&1 | head -100\")",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npm run build 2>&1 | tail -60\")",
+      "PowerShell(Get-Command *)",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && \\(nohup npm run dev -- --port 5183 > /tmp/vite-dev.log 2>&1 &\\) ; sleep 1; echo started\")",
+      "PowerShell(wsl -e bash -lc \"timeout 30 bash -c 'until curl -sf http://localhost:5183 >/dev/null; do sleep 1; done'; echo ready; cat /tmp/vite-dev.log\")",
+      "Skill(claude-in-chrome)",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && ls node_modules | grep -iE 'playwright|puppeteer'\")",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && curl -s http://localhost:5183/ | grep -i favicon; echo ---; curl -sI http://localhost:5183/favicon-32x32.png | head -3; echo ---; curl -sI http://localhost:5183/apple-touch-icon.png | head -3\")",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && curl -s http://localhost:5183/ | head -20\")",
+      "PowerShell(wsl -e bash -lc \"curl -sv http://localhost:5183/ -o /tmp/out.html; echo EXIT:$?; wc -l /tmp/out.html; grep -i favicon /tmp/out.html\")",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npm run dev -- --port 5183 --strictPort\")",
+      "PowerShell(wsl -e bash -lc \"timeout 30 bash -c 'until curl -sf http://localhost:5183 >/dev/null; do sleep 1; done' && echo ready\")",
+      "PowerShell(wsl -e bash -lc \"curl -s http://localhost:5183/ | grep -i 'icon\\\\|favicon'; echo ---32---; curl -o /dev/null -s -w '%{http_code}\\\\n' http://localhost:5183/favicon-32x32.png; echo ---16---; curl -o /dev/null -s -w '%{http_code}\\\\n' http://localhost:5183/favicon-16x16.png; echo ---apple---; curl -o /dev/null -s -w '%{http_code}\\\\n' http://localhost:5183/apple-touch-icon.png\")",
+      "PowerShell(wsl -e bash -lc \"curl -s http://localhost:5183/src/content/ja.yaml | grep -A2 organizerLabel\")",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npm run dev -- --port 5183 --strictPort --host 0.0.0.0\")",
+      "PowerShell(curl.exe -m 5 -s -o NUL -w \"STATUS:%{http_code}\\\\n\" http://172.25.9.177:5183/)",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npx tsc --noEmit -p tsconfig.app.json 2>&1\")",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npx tsc --noEmit -p tsconfig.app.json && echo OK\")",
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npx tsc --noEmit -p tsconfig.app.json && echo TS_OK && npm run build 2>&1 | tail -20\")"
     ]
   }
 }

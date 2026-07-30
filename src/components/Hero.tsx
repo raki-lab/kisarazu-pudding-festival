@@ -12,7 +12,6 @@ export function Hero() {
         <p className="hero__raindate">
           {t('event.rainNote') /* 荒天の場合は10月25日(日)に順延（予備日） */}
         </p>
-        <p className="hero__badge">{t('hero.badge') /* 🍮 木更津・まちなかプリンの祭典 */}</p>
         <h1 className="hero__title">
           <Lines text={t('hero.title') /* 木更津\nプリンフェスティバル */} />
         </h1>

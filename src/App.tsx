@@ -6,6 +6,7 @@ import { ShopList } from './components/ShopList'
 import { VenueMap } from './components/VenueMap'
 import { Notice } from './components/Notice'
 import { Access } from './components/Access'
+import { Schedule } from './components/Schedule'
 import { Faq } from './components/Faq'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
@@ -23,6 +24,7 @@ function App() {
         <Notice />
         <div className="wave-divider" aria-hidden="true"></div>
         <Access />
+        <Schedule />
         <Faq />
       </main>
       <Contact />
