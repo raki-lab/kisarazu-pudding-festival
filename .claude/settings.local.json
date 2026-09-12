@@ -155,7 +155,11 @@
       "PowerShell(curl.exe -m 5 -s -o NUL -w \"STATUS:%{http_code}\\\\n\" http://172.25.9.177:5183/)",
       "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npx tsc --noEmit -p tsconfig.app.json 2>&1\")",
       "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npx tsc --noEmit -p tsconfig.app.json && echo OK\")",
-      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npx tsc --noEmit -p tsconfig.app.json && echo TS_OK && npm run build 2>&1 | tail -20\")"
+      "PowerShell(wsl -e bash -lc \"cd /home/ryota/projects/kisarazu-pudding-festival && npx tsc --noEmit -p tsconfig.app.json && echo TS_OK && npm run build 2>&1 | tail -20\")",
+      "PowerShell($path = 'C:\\\\Users\\\\user\\\\Downloads\\\\puddingfes_A1poster_fnl\\\\puddingfes_A1poster_fnl\\\\puddingfes_A1poster_fnl.ai'; $bytes = [System.IO.File]::ReadAllBytes\\($path\\) | Select-Object -First 8; \\($bytes | ForEach-Object { [char]$_ }\\) -join '')",
+      "PowerShell(wsl -e bash -lc \"which pdftoppm; which convert; which magick; which gs\")",
+      "PowerShell(wsl -e bash -lc \"sudo -n apt-get install -y poppler-utils 2>&1 | tail -20\")",
+      "Artifact"
     ]
   }
 }

@@ -1,9 +1,3 @@
-export interface HighlightItem {
-  emoji: string
-  title: string
-  text: string
-}
-
 export interface VendorItem {
   name: string
   area: string
@@ -62,11 +56,6 @@ export interface Content {
     }
     ctaVendors: string
     ctaAccess: string
-  }
-  about: {
-    title: string
-    text: string
-    highlights: HighlightItem[]
   }
   vendors: {
     title: string

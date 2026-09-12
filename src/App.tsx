@@ -1,7 +1,6 @@
 import './App.css'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
-import { About } from './components/About'
 import { ShopList } from './components/ShopList'
 import { VenueMap } from './components/VenueMap'
 import { Notice } from './components/Notice'
@@ -17,7 +16,6 @@ function App() {
       <Header />
       <Hero />
       <main>
-        <About />
         <ShopList />
         <div className="wave-divider" aria-hidden="true"></div>
         <VenueMap />
