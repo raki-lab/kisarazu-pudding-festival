@@ -36,7 +36,7 @@ vendors:
   note: ""
   items:
     - name: "ONE DROP FARM"
-      published: false
+      published: true
       area: "市原市瀬又"
       tagline: "はちみつプリン"
       description: "comming soon"
@@ -46,7 +46,7 @@ vendors:
       snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/onedropfarm.jpg"
     - name: "オーベルジュ波太オルビス"
-      published: false
+      published: true
       area: "鴨川市太海"
       tagline: "シャチプリン"
       description: "comming soon"
@@ -57,7 +57,7 @@ vendors:
       imageUrl: "/pudding/オルビス.jpg"
       imagePosition: "center 85%"
     - name: "本郷ベーカリー木更津ファクトリー"
-      published: false
+      published: true
       area: "木更津市かずさ鎌足"
       tagline: "本郷プリン"
       description: "濃厚な黄身のコクと、マダガスカル産バニラビーンズの豊かな香り。なめらかで奥行きのある味わいに仕上げた、本郷ベーカリー自慢のプリンです。"
@@ -67,7 +67,7 @@ vendors:
       snsUrl: "https://example.com/"
       imageUrl: "/pudding/本郷ベーカリー.jpg"
     - name: "Meat 29"
-      published: false
+      published: true
       area: "千葉市若葉区西都賀"
       tagline: "きな粉プリン"
       description: "comming soon"
@@ -78,7 +78,7 @@ vendors:
       imageUrl: "/pudding/Meat29.jpg"
       imagePosition: "center 80%"
     - name: "uni29bar® ユニークバル"
-      published: false
+      published: true
       area: "千葉市若葉区西都賀"
       tagline: "苺みるくプリン"
       description: "comming soon"
@@ -89,7 +89,7 @@ vendors:
       imageUrl: "/pudding/uni29bar.jpg"
       imagePosition: "center 15%"
     - name: "Pergolato"
-      published: false
+      published: true
       area: "木更津市東太田"
       tagline: "抹茶プリン"
       description: "comming soon"
@@ -99,7 +99,7 @@ vendors:
       snsUrl: "https://example.com/"
       imageUrl: "/pudding/Pergolato.jpg"
     - name: "Oyatsuya LiLy"
-      published: false
+      published: true
       area: "木更津市祇園"
       tagline: "キャラメルプリン"
       description: "comming soon"
@@ -109,7 +109,7 @@ vendors:
       snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/リリー.jpg"
     - name: "かずさスモーク"
-      published: false
+      published: true
       area: "木更津市長須賀"
       tagline: "もちもちプリン"
       description: "comming soon"
@@ -119,7 +119,7 @@ vendors:
       snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/かずさスモーク.jpg"
     - name: "菜の花エッグ"
-      published: false
+      published: true
       area: "君津市山滝野"
       tagline: "菜の花たまごのホワイトチョコプリン"
       description: "菜の花エッグの西野直売所KOKKO。農場直販の新鮮なたまごをはじめ、プリンや焼き菓子など、たまごのおいしさをお届けします。"
@@ -129,7 +129,7 @@ vendors:
       snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/菜の花エッグ.jpg"
     - name: "波音"
-      published: false
+      published: true
       area: "長生郡一宮町東浪見"
       tagline: "海プリン"
       description: "comming soon"
@@ -140,7 +140,7 @@ vendors:
       imageUrl: "/pudding/波音.jpg"
       imagePosition: "center 15%"
     - name: "Little choice"
-      published: false
+      published: true
       area: "木更津市富士見"
       tagline: "さつまいも和プリン"
       description: "comming soon"
@@ -150,7 +150,7 @@ vendors:
       snsUrl: "https://example.com/"
       imageUrl: "/pudding/Little choice.jpg"
     - name: "THE COFFEE"
-      published: false
+      published: true
       area: "木更津市東中央"
       tagline: "コーヒープリン"
       description: "THE COFFEEは千葉県木更津市に拠点を構えるスペシャルティコーヒー専門店です。バリスタ×料理人がタッグを組み、掛け合わせの価値をプリンで表現しています。"
@@ -161,7 +161,7 @@ vendors:
       imageUrl: "/pudding/THE COFFEE.jpg"
       imagePosition: "center 85%"
     - name: "せとぷ"
-      published: false
+      published: true
       area: "愛媛県西宇和郡伊方町"
       tagline: "せとぷ"
       description: "comming soon"
@@ -171,7 +171,7 @@ vendors:
       snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/せとぷ.jpg"
     - name: "髙木製菓"
-      published: false
+      published: true
       area: "木更津市金田東"
       tagline: "ジョージ君のご褒美プリン"
       description: "comming soon"
@@ -182,7 +182,7 @@ vendors:
       imageUrl: "/pudding/高木製菓.jpg"
       imagePosition: "center 80%"
     - name: "風鈴堂"
-      published: false
+      published: true
       area: "君津市笹"
       tagline: "きみつプリン"
       description: "comming soon"
@@ -193,7 +193,7 @@ vendors:
       imageUrl: "/pudding/風鈴堂.jpg"
       imagePosition: "center 85%"
     - name: "addition"
-      published: false
+      published: true
       area: "木更津市潮見"
       tagline: "純喫茶風かためプリン"
       description: "comming soon"
@@ -203,7 +203,7 @@ vendors:
       snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/addition.jpg"
     - name: "パティスリーコキヤージュ"
-      published: false
+      published: true
       area: "木更津市大和"
       tagline: "とろーりプリン"
       description: "comming soon"
@@ -213,7 +213,7 @@ vendors:
       snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/パティスリーコキヤージュ.jpg"
     - name: "cucinaRagazza Carina"
-      published: false
+      published: true
       area: "木更津市東太田"
       tagline: "kazusa薫るレモネードプリン"
       description: "comming soon"
@@ -223,7 +223,7 @@ vendors:
       snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/cucinaRagazza Carina.jpg"
     - name: "上総食材 KAFKA"
-      published: false
+      published: true
       area: "木更津市東中央"
       tagline: "千葉県産落花生使用ビターな甘さのピーナッツプリン"
       description: "木更津市ふるさと納税認定品。千葉県産落花生使用。地元の食材をお届けします。"
@@ -234,7 +234,7 @@ vendors:
       imageUrl: "/pudding/カフカ.jpg"
       imagePosition: "center 80%"
     - name: "富分"
-      published: false
+      published: true
       area: "君津市南子安"
       tagline: "スーパーが本気で作る極蜜おいもプリン"
       description: "comming soon"
@@ -244,7 +244,7 @@ vendors:
       snsUrl: "https://example.com/"
       imageUrl: "/pudding/富分.jpg"
     - name: "八天堂きさらづ"
-      published: false
+      published: true
       area: "木更津市かずさ鎌足"
       tagline: "こだわりカスタードのとろけるプリン"
       description: "comming soon"
@@ -255,7 +255,7 @@ vendors:
       imageUrl: "/pudding/八天堂.jpg"
       imagePosition: "center 80%"
     - name: "せんねんの木"
-      published: false
+      published: true
       area: "木更津市永井作"
       tagline: "要確認"
       description: "comming soon"
@@ -265,7 +265,7 @@ vendors:
       snsUrl: "https://example.com/"
       imageUrl: "/pudding/せんねんの木.jpg"
     - name: "ごはんクリエイト"
-      published: false
+      published: true
       area: "木更津市大和"
       tagline: "久留里の恵プリン"
       description: "comming soon"
@@ -275,7 +275,7 @@ vendors:
       snsUrl: "https://example.com/"
       imageUrl: "/pudding/ごはんクリエイト.jpg"
     - name: "まめの木"
-      published: false
+      published: true
       area: "富津市志駒"
       tagline: "要確認"
       description: "comming soon"
