@@ -1,12 +1,14 @@
 import { t, list } from '../content'
 import type { ScheduleItem } from '../content'
 import { SectionTitle } from './SectionTitle'
+import { Confetti } from './Confetti'
 
 export function Schedule() {
   const items = list<ScheduleItem>('schedule.items')
 
   return (
     <section className="section" id="schedule">
+      <Confetti variant="schedule" />
       <SectionTitle
         title={t('schedule.title') /* ステージスケジュール */}
         note={t('schedule.note') /* 出演者・内容は決定次第更新します（下記は仮スケジュールです） */}

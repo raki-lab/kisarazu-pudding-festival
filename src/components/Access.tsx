@@ -1,5 +1,6 @@
 import { t } from '../content'
 import { SectionTitle } from './SectionTitle'
+import { Confetti } from './Confetti'
 
 export function Access() {
   const venueName = t('access.venueName') // イオンモール木更津
@@ -7,6 +8,7 @@ export function Access() {
 
   return (
     <section className="section section--tint" id="access">
+      <Confetti variant="access" />
       <SectionTitle title={t('access.title') /* アクセス */} />
       <div className="access">
         <iframe

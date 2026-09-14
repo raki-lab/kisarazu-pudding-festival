@@ -1,9 +1,11 @@
 import { t } from '../content'
 import { Lines } from '../content/Lines'
+import { Confetti } from './Confetti'
 
 export function Contact() {
   return (
     <section className="section section--contact" id="contact">
+      <Confetti variant="contact" />
       <div className="contact">
         <h2 className="contact__title">{t('contact.title') /* SNS・お問い合わせ */}</h2>
         <p className="contact__text">

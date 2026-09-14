@@ -4,6 +4,7 @@ import type { VendorItem } from '../content'
 import { SectionTitle } from './SectionTitle'
 import { ShopCard } from './ShopCard'
 import { ShopDialog } from './ShopDialog'
+import { Confetti } from './Confetti'
 
 export function ShopList() {
   const vendors = list<VendorItem>('vendors.items')
@@ -12,6 +13,7 @@ export function ShopList() {
 
   return (
     <section className="section" id="vendors">
+      <Confetti variant="vendors" />
       <SectionTitle
         title={t('vendors.title') /* 出店店舗 */}
         note={t('vendors.note') /* ※ 出店者は随時追加・更新されます（現在は仮データです） */}

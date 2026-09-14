@@ -1,4 +1,5 @@
 import './App.css'
+import { NEW_DESIGN_ENABLED } from './theme'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { ShopList } from './components/ShopList'
@@ -12,7 +13,7 @@ import { Footer } from './components/Footer'
 
 function App() {
   return (
-    <div className="page">
+    <div className={`page${NEW_DESIGN_ENABLED ? ' theme-poster' : ''}`}>
       <Header />
       <Hero />
       <main>

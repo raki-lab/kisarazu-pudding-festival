@@ -350,6 +350,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.vendor {
+  min-width: 0;
+}
+
 .vendor__trigger {
   display: flex;
   flex-direction: column;
@@ -377,14 +381,43 @@
   outline-offset: 2px;
 }
 
-.vendor__image {
+.vendor__image-wrap {
+  position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  overflow: hidden;
   background: var(--custard-soft);
 }
 
+.vendor__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vendor__image--blurred {
+  filter: blur(16px);
+  transform: scale(1.3);
+}
+
+.vendor__image-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(43, 36, 25, 0.4);
+  color: var(--cream);
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 8px;
+}
+
 .vendor__name {
+  min-width: 0;
   padding: 10px 12px 0;
   font-family: var(--serif);
   font-size: 0.8rem;
@@ -398,20 +431,54 @@
   overflow: hidden;
 }
 
+.vendor__tagline {
+  min-width: 0;
+  padding: 4px 12px 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--caramel-deep);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .vendor__area {
-  padding: 6px 12px 0;
-  font-size: 0.7rem;
+  min-width: 0;
+  align-self: flex-start;
+  max-width: calc(100% - 24px);
+  margin: 6px 12px 0;
+  padding: 3px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  font-size: 0.68rem;
   color: var(--text-soft);
+}
+
+.vendor__area-icon {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+.vendor__area-text {
+  min-width: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .vendor__price {
+  min-width: 0;
   padding: 2px 12px 12px;
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--caramel-deep);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ===== 出店店舗の詳細モーダル ===== */
@@ -451,11 +518,37 @@
   cursor: pointer;
 }
 
+.vendor-dialog__image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--custard-soft);
+}
+
 .vendor-dialog__image {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 100%;
   object-fit: cover;
-  background: var(--custard-soft);
+}
+
+.vendor-dialog__image--blurred {
+  filter: blur(22px);
+  transform: scale(1.3);
+}
+
+.vendor-dialog__image-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(43, 36, 25, 0.4);
+  color: var(--cream);
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
 }
 
 .vendor-dialog__body {
@@ -481,7 +574,9 @@
 }
 
 .vendor-dialog__area {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   width: fit-content;
   font-size: 0.72rem;
   font-weight: 600;
@@ -489,6 +584,12 @@
   padding: 3px 12px;
   border: 1px solid var(--caramel-soft);
   border-radius: 999px;
+}
+
+.vendor-dialog__area-icon {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
 }
 
 .vendor-dialog__desc {
@@ -948,4 +1049,125 @@
   .nav__toggle span {
     transition: none;
   }
+}
+
+/* ===== ポスターテーマ（NEW_DESIGN_ENABLED フラグ有効時のみ） ===== */
+/* 文字色・アクセント色（caramel系）は元デザイン（false）と統一し、変更するのは背景色のみ */
+.theme-poster {
+  /* ポスター本体の地色（#f1eb3d 実測）と、少し薄めたトーンの2色 */
+  --paper: #f1eb3d;
+  --paper-deep: #f8f27a;
+  background: var(--paper);
+}
+
+.theme-poster .nav {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.theme-poster .section,
+.theme-poster .section--tint,
+.theme-poster .hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 素の .section も帯を左右いっぱいまで塗り、中身だけ中央寄せに戻す（.section--tint と同じやり方） */
+.theme-poster .section {
+  max-width: none;
+}
+
+.theme-poster .section > *:not(dialog) {
+  max-width: 1040px;
+  margin-inline: auto;
+}
+
+.theme-poster .venuemap__zone--booth {
+  background: var(--white);
+  border-color: var(--caramel);
+}
+
+/* セクションごとに背景色を交互に切り替え（Hero=ポスター色, Vendors=薄め, VenueMap=ポスター色, Notice=薄め, Access=ポスター色, Schedule=薄め, Faq=ポスター色, Contact=薄め） */
+.theme-poster #top,
+.theme-poster #venue-map,
+.theme-poster #access,
+.theme-poster #faq {
+  background: var(--paper);
+}
+
+.theme-poster #vendors,
+.theme-poster #notice,
+.theme-poster #schedule,
+.theme-poster #contact {
+  background: var(--paper-deep);
+}
+
+.hero--poster {
+  padding: 64px 24px 72px;
+}
+
+.hero__poster-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.hero__poster-title {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero__poster-date {
+  display: block;
+  width: 58%;
+  height: auto;
+  margin: 14px auto 0;
+}
+
+/* --- 紙吹雪・紙テープ・星の散らし装飾 --- */
+.confetti-piece {
+  position: absolute;
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- SNS・お問い合わせ（ポスターのクリーム地に合わせる） --- */
+.theme-poster .contact__title {
+  color: var(--ink);
+}
+
+.theme-poster .contact__text {
+  color: var(--text-soft);
+}
+
+.theme-poster .section--contact .btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--hairline);
+}
+
+.theme-poster .contact__sns-title {
+  color: var(--caramel-deep);
+}
+
+.theme-poster .contact__sns a {
+  color: var(--ink);
+  border-bottom-color: var(--hairline);
+}
+
+.theme-poster .contact__sns a:hover {
+  border-color: var(--ink);
+}
+
+/* --- フッター --- */
+.theme-poster .footer {
+  background: var(--white);
+  color: var(--text-soft);
+  border-top: 1px solid var(--hairline);
+}
+
+.theme-poster .footer__logo {
+  color: var(--ink);
 }

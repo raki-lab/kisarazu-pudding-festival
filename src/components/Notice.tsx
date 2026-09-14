@@ -1,11 +1,13 @@
 import { t, list } from '../content'
 import { SectionTitle } from './SectionTitle'
+import { Confetti } from './Confetti'
 
 export function Notice() {
   const items = list<string>('notice.items')
 
   return (
     <section className="section" id="notice">
+      <Confetti variant="notice" />
       <SectionTitle title={t('notice.title') /* ご来場にあたっての注意事項 */} />
       <div className="notes">
         <ul className="notes__list">

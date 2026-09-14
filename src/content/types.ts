@@ -8,6 +8,10 @@ export interface VendorItem {
   snsLabel: string
   snsUrl: string
   imageUrl?: string
+  /** 写真ごとに主役(プリン)が写っている位置に合わせて調整するCSSのobject-position値 (未指定時は"center") */
+  imagePosition?: string
+  /** true: 実データ(tagline/products/price/画像)をそのまま表示。false/未指定: tagline/products/priceを"comming soon"表示にし、画像はぼかし+「comming soon」表記にする */
+  published?: boolean
 }
 
 export interface LegendItem {

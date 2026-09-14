@@ -1,7 +1,29 @@
 import { t } from '../content'
 import { Lines } from '../content/Lines'
+import { Confetti } from './Confetti'
+import { NEW_DESIGN_ENABLED } from '../theme'
 
-export function Hero() {
+function HeroPoster() {
+  return (
+    <section className="hero hero--poster" id="top">
+      <Confetti variant="hero" />
+      <div className="hero__poster-inner">
+        <img
+          className="hero__poster-title"
+          src="/theme/el_titlechars.png"
+          alt={`${t('hero.title').replace('\n', ' ')} タイトルとプリン帽子をかぶった猫キャラクターたち`}
+        />
+        <img
+          className="hero__poster-date"
+          src="/theme/el_datevenue2.png"
+          alt={`${t('event.dateShort')} ${t('event.dateDay')} ${t('event.time')} 会場 ${t('venue.name')}`}
+        />
+      </div>
+    </section>
+  )
+}
+
+function HeroClassic() {
   return (
     <section className="hero" id="top">
       <div className="hero__inner">
@@ -51,4 +73,8 @@ export function Hero() {
       <div className="hero__wave" aria-hidden="true"></div>
     </section>
   )
+}
+
+export function Hero() {
+  return NEW_DESIGN_ENABLED ? <HeroPoster /> : <HeroClassic />
 }
