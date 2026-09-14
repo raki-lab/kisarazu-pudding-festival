@@ -6,10 +6,14 @@ export function ShopDialog({
   vendor,
   index,
   onClose,
+  onPrev,
+  onNext,
 }: {
   vendor: VendorItem | null
   index: number | null
   onClose: () => void
+  onPrev: () => void
+  onNext: () => void
 }) {
   const ref = useRef<HTMLDialogElement>(null)
 
@@ -22,6 +26,16 @@ export function ShopDialog({
       dialog.close()
     }
   }, [vendor])
+
+  useEffect(() => {
+    if (!vendor) return
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') onPrev()
+      if (e.key === 'ArrowRight') onNext()
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [vendor, onPrev, onNext])
 
   return (
     <dialog
@@ -44,6 +58,22 @@ export function ShopDialog({
             ×
           </button>
           <div className="vendor-dialog__image-wrap">
+            <button
+              type="button"
+              className="vendor-dialog__nav vendor-dialog__nav--prev"
+              onClick={onPrev}
+              aria-label="前の店舗"
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              className="vendor-dialog__nav vendor-dialog__nav--next"
+              onClick={onNext}
+              aria-label="次の店舗"
+            >
+              ›
+            </button>
             <img
               className={`vendor-dialog__image${vendor.published === true ? '' : ' vendor-dialog__image--blurred'}`}
               src={vendor.imageUrl ?? vendorPlaceholderImage(index)}

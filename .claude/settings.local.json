@@ -171,7 +171,12 @@
       "PowerShell(node check2.mjs)",
       "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && git diff --stat package-lock.json; git diff package-lock.json | head -50\")",
       "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && git diff package.json; grep -n 'js-yaml' package.json\")",
-      "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && git checkout -- package-lock.json && git status --short\")"
+      "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && git checkout -- package-lock.json && git status --short\")",
+      "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && npx tsc --noEmit\" 2>&1 | Select-Object -Last 30)",
+      "PowerShell(node nav.mjs)",
+      "PowerShell(node mobile_nav.mjs)",
+      "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && npx tsc --noEmit\" 2>&1 | Select-Object -Last 20)",
+      "PowerShell(node mobile.mjs)"
     ]
   }
 }

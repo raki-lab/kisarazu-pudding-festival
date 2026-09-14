@@ -11,6 +11,16 @@ export function ShopList() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
   const activeVendor = activeIndex !== null ? vendors[activeIndex] : null
 
+  const goPrev = () => {
+    setActiveIndex((current) =>
+      current === null ? current : (current - 1 + vendors.length) % vendors.length,
+    )
+  }
+
+  const goNext = () => {
+    setActiveIndex((current) => (current === null ? current : (current + 1) % vendors.length))
+  }
+
   return (
     <section className="section" id="vendors">
       <Confetti variant="vendors" />
@@ -28,7 +38,13 @@ export function ShopList() {
           />
         ))}
       </ul>
-      <ShopDialog vendor={activeVendor} index={activeIndex} onClose={() => setActiveIndex(null)} />
+      <ShopDialog
+        vendor={activeVendor}
+        index={activeIndex}
+        onClose={() => setActiveIndex(null)}
+        onPrev={goPrev}
+        onNext={goNext}
+      />
     </section>
   )
 }
