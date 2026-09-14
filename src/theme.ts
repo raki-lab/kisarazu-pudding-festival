@@ -7,4 +7,4 @@
  * ポスターの利用許可が下りなかった場合などは、この値を false に戻すだけで
  * 以前のデザインに一括で戻せます。
  */
-export const NEW_DESIGN_ENABLED = false
+export const NEW_DESIGN_ENABLED = true
