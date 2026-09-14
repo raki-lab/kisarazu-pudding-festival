@@ -64,7 +64,7 @@ vendors:
       products: "カレーパンの王様/伝説のラザニアパン"
       price: "¥480（税込）"
       snsLabel: "Instagramを見る"
-      snsUrl: "https://example.com/"
+      snsUrl: "https://www.instagram.com/hongo.kisarazu.factory"
       imageUrl: "/pudding/本郷ベーカリー.jpg"
     - name: "Meat 29"
       published: true
@@ -74,7 +74,7 @@ vendors:
       products: "comming soon"
       price: "comming soon"
       snsLabel: "Instagramを見る"
-      snsUrl: "https://www.instagram.com/hongo.kisarazu.factory"
+      snsUrl: "https://www.instagram.com/"
       imageUrl: "/pudding/Meat29.jpg"
       imagePosition: "center 80%"
     - name: "uni29bar® ユニークバル"
@@ -125,8 +125,8 @@ vendors:
       description: "菜の花エッグの西野直売所KOKKO。農場直販の新鮮なたまごをはじめ、プリンや焼き菓子など、たまごのおいしさをお届けします。"
       products: "ちばのこだわりプリン2種/たまごサンドウィッチ/etc"
       price: "400円（税込）"
-      snsLabel: "Instagramを見る"
-      snsUrl: "https://www.instagram.com/"
+      snsLabel: "公式サイトを見る"
+      snsUrl: "https://nanohana-egg.co.jp/"
       imageUrl: "/pudding/菜の花エッグ.jpg"
     - name: "波音"
       published: true

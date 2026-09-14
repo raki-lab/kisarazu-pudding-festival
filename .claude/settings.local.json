@@ -176,7 +176,8 @@
       "PowerShell(node nav.mjs)",
       "PowerShell(node mobile_nav.mjs)",
       "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && npx tsc --noEmit\" 2>&1 | Select-Object -Last 20)",
-      "PowerShell(node mobile.mjs)"
+      "PowerShell(node mobile.mjs)",
+      "PowerShell(node scroll_reset.mjs)"
     ]
   }
 }

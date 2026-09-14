@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useLayoutEffect, useRef } from 'react'
 import type { VendorItem } from '../content'
 import { vendorPlaceholderImage } from '../lib/placeholder'
 
@@ -16,6 +16,7 @@ export function ShopDialog({
   onNext: () => void
 }) {
   const ref = useRef<HTMLDialogElement>(null)
+  const bodyRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const dialog = ref.current
@@ -26,6 +27,10 @@ export function ShopDialog({
       dialog.close()
     }
   }, [vendor])
+
+  useLayoutEffect(() => {
+    if (bodyRef.current) bodyRef.current.scrollTop = 0
+  }, [index])
 
   useEffect(() => {
     if (!vendor) return
@@ -84,7 +89,7 @@ export function ShopDialog({
               <span className="vendor-dialog__image-overlay">comming soon</span>
             )}
           </div>
-          <div className="vendor-dialog__body">
+          <div className="vendor-dialog__body" ref={bodyRef}>
             <h3 id="vendor-dialog-title" className="vendor-dialog__name">
               {vendor.name}
             </h3>
