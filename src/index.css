@@ -24,7 +24,7 @@
   --shadow-md: 0 16px 40px rgba(43, 36, 25, 0.08);
   --radius: 20px;
 
-  --serif: "Shippori Mincho", "Hiragino Mincho ProN", serif;
+  --serif: "M PLUS Rounded 1c", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
   --sans:
     "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", "Meiryo",
     system-ui, sans-serif;
