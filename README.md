@@ -1,75 +1,66 @@
-# React + TypeScript + Vite
+# 木更津プリンフェス 公式Webサイト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+木更津プリンフェスのイベント情報を発信するために制作したWebサイトです。
 
-Currently, two official plugins are available:
+イベントの概要、出店情報、タイムテーブル、アクセス情報、会場マップなどを、PC・スマートフォンの両方から確認できるようにしています。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 主な機能
 
-## React Compiler
+* イベント概要の表示
+* 出店店舗情報の掲載
+* タイムテーブルの表示
+* 会場マップの表示
+* アクセス情報の掲載
+* PC / スマートフォンのレスポンシブ対応
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 技術構成
 
-## Expanding the ESLint configuration
+* React
+* TypeScript
+* Vite
+* HTML / CSS
+* Vercel
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 開発について
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+イベントに来場するユーザーが、スマートフォンから必要な情報へすぐアクセスできることを意識して制作しました。
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+特に、会場内で利用されることを想定し、出店場所やステージ情報、アクセス情報などを分かりやすく確認できるUIを意識しています。
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+また、PCとスマートフォンでレイアウトや情報量が大きく変わらないよう、レスポンシブ対応を行っています。
 
+## 実装・改善したポイント
+
+### 会場マップ
+
+店舗位置や会場内の施設を視覚的に確認できるよう、イベント用の会場マップを実装しました。
+
+### タイムテーブル
+
+イベント当日の進行を分かりやすく確認できるよう、ステージ・イベント情報をタイムテーブル形式で表示しています。
+
+### レスポンシブ対応
+
+イベント会場ではスマートフォンから閲覧されるケースが多いことを想定し、モバイル表示を重視してUIを調整しています。
+
+## ローカルでの起動方法
+
+```bash
+git clone https://github.com/raki-lab/kisarazu-pudding-festival.git
+
+cd kisarazu-pudding-festival
+
+npm install
+
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run build
 ```
+
+## Deploy
+
+Vercelを利用してデプロイしています。

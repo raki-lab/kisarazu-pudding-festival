@@ -177,7 +177,15 @@
       "PowerShell(node mobile_nav.mjs)",
       "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && npx tsc --noEmit\" 2>&1 | Select-Object -Last 20)",
       "PowerShell(node mobile.mjs)",
-      "PowerShell(node scroll_reset.mjs)"
+      "PowerShell(node scroll_reset.mjs)",
+      "PowerShell(node preview.mjs)",
+      "PowerShell(wsl -e bash -lc \"pgrep -fa vite; ss -ltnp 2>/dev/null | grep 517\")",
+      "PowerShell(wsl -e bash -lc \"cd ~/projects/kisarazu-pudding-festival && nohup npm run dev -- --port 5173 --host 127.0.0.1 > /tmp/vite.log 2>&1 & disown; sleep 3; curl -s -o /dev/null -w '%{http_code}\\\\n' http://localhost:5173/\")",
+      "PowerShell(Invoke-WebRequest -Uri \"http://localhost:5173/\" -UseBasicParsing -TimeoutSec 5 | Select-Object -ExpandProperty StatusCode)",
+      "PowerShell(node debug.mjs)",
+      "PowerShell(node preview2.mjs)",
+      "PowerShell(node sample_shot.mjs)",
+      "PowerShell(node verify.mjs)"
     ]
   }
 }
