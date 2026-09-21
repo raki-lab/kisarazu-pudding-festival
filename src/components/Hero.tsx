@@ -53,7 +53,7 @@ function HeroClassic() {
           </div>
           <div>
             <dt>{t('hero.metaLabels.time') /* 時間 */}</dt>
-            <dd>{t('event.time') /* 10:00 - 17:00 */}</dd>
+            <dd>{t('event.time') /* 11:00 - 16:00 */}</dd>
           </div>
           <div>
             <dt>{t('hero.metaLabels.venue') /* 会場 */}</dt>
