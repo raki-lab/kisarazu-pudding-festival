@@ -7,6 +7,7 @@ function HeroPoster() {
   return (
     <section className="hero hero--poster" id="top">
       <Confetti variant="hero" />
+      <h1 className="sr-only">{t('hero.title').replace('\n', ' ')}</h1>
       <div className="hero__poster-inner">
         <img
           className="hero__poster-title"
