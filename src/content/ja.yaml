@@ -287,7 +287,7 @@ vendors:
 
 venueMap:
   title: "会場マップ"
-  note: "正式な会場マップは後日公開予定です。下記は配置イメージです。"
+  note: "正式な会場マップは後日公開予定です。"
   legend:
     - icon: "🍮"
       label: "出店ブース"

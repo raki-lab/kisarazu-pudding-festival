@@ -112,7 +112,9 @@ export function ShopDialog({
               </svg>
               {vendor.area}
             </span>
-            <p className="vendor-dialog__desc">{vendor.description}</p>
+            <p className="vendor-dialog__desc">
+              {vendor.published === true ? vendor.description : 'comming soon'}
+            </p>
             <dl className="vendor-dialog__info">
               <div>
                 <dt>販売予定商品</dt>

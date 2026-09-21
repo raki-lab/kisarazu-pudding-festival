@@ -14,16 +14,22 @@ export function VenueMap() {
       <Confetti variant="venueMap" />
       <SectionTitle title={t('venueMap.title') /* 会場マップ */} />
       <div className="venuemap">
-        <div className="venuemap__diagram" role="img" aria-label="会場マップの簡易イメージ図">
-          {legend.map((item, i) => (
-            <div
-              className={`venuemap__zone venuemap__zone--${ZONE_CLASSES[i] ?? 'other'}`}
-              key={item.label}
-            >
-              <span aria-hidden="true">{item.icon}</span>
-              {item.label}
-            </div>
-          ))}
+        <div className="venuemap__diagram-wrap">
+          <div
+            className="venuemap__diagram venuemap__diagram--blurred"
+            aria-hidden="true"
+          >
+            {legend.map((item, i) => (
+              <div
+                className={`venuemap__zone venuemap__zone--${ZONE_CLASSES[i] ?? 'other'}`}
+                key={item.label}
+              >
+                <span aria-hidden="true">{item.icon}</span>
+                {item.label}
+              </div>
+            ))}
+          </div>
+          <span className="venuemap__diagram-overlay">comming soon</span>
         </div>
         <p className="venuemap__note">
           {t('venueMap.note') /* 正式な会場マップは後日公開予定です。下記は配置イメージです。 */}
