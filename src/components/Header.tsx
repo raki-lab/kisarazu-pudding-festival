@@ -15,7 +15,7 @@ export function Header() {
     <header className="nav">
       <div className="nav__inner">
         <a className="nav__brand" href="#top" onClick={() => setOpen(false)}>
-          {t('nav.brand') /* 🍮 木更津プリンフェスティバル */}
+          {t('nav.brand') /* 木更津プリンフェスティバル */}
         </a>
         <nav className="nav__links" aria-label="ページ内リンク">
           {LINKS.map((link) => (
