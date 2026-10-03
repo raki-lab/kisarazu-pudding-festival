@@ -1112,8 +1112,8 @@
 /* ===== ポスターテーマ（NEW_DESIGN_ENABLED フラグ有効時のみ） ===== */
 /* 文字色・アクセント色（caramel系）は元デザイン（false）と統一し、変更するのは背景色のみ */
 .theme-poster {
-  /* ポスター本体の地色（#f1eb3d 実測）と、少し薄めたトーンの2色 */
-  --paper: #f1eb3d;
+  /* ポスター本体の地色（#f1ed58 実測）と、少し薄めたトーンの2色 */
+  --paper: #f1ed58;
   --paper-deep: #f8f27a;
   background: var(--paper);
 }
