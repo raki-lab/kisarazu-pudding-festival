@@ -83,7 +83,6 @@ export function ShopDialog({
               className={`vendor-dialog__image${vendor.published === true ? '' : ' vendor-dialog__image--blurred'}`}
               src={vendor.imageUrl ?? vendorPlaceholderImage(index)}
               alt={`${vendor.name}のプリン`}
-              style={{ objectPosition: vendor.imagePosition ?? 'center' }}
             />
             {vendor.published !== true && (
               <span className="vendor-dialog__image-overlay">comming soon</span>

@@ -27,7 +27,6 @@ export function ShopCard({
             src={image}
             alt={`${vendor.name}のプリン`}
             loading="lazy"
-            style={{ objectPosition: vendor.imagePosition ?? 'center' }}
           />
           {!isPublished && <span className="vendor__image-overlay">comming soon</span>}
         </div>

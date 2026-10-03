@@ -12,12 +12,7 @@ function HeroPoster() {
         <img
           className="hero__poster-title"
           src="/theme/el_titlechars.png"
-          alt={`${t('hero.title').replace('\n', ' ')} タイトルとプリン帽子をかぶった猫キャラクターたち`}
-        />
-        <img
-          className="hero__poster-date"
-          src="/theme/el_datevenue2.png"
-          alt={`${t('event.dateShort')} ${t('event.dateDay')} ${t('event.time')} 会場 ${t('venue.name')}`}
+          alt={`${t('hero.title').replace('\n', ' ')} タイトルとプリン帽子をかぶった猫キャラクターたち。${t('event.dateShort')} ${t('event.dateDay')} ${t('event.time')} 会場 ${t('venue.name')}`}
         />
       </div>
     </section>

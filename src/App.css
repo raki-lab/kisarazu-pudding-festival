@@ -1176,13 +1176,6 @@
   height: auto;
 }
 
-.hero__poster-date {
-  display: block;
-  width: 58%;
-  height: auto;
-  margin: 14px auto 0;
-}
-
 /* --- 紙吹雪・紙テープ・星の散らし装飾 --- */
 .confetti-piece {
   position: absolute;
