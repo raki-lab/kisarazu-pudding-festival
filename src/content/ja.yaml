@@ -283,20 +283,6 @@ vendors:
 
 venueMap:
   title: "会場マップ"
-  note: "正式な会場マップは後日公開予定です。"
-  legend:
-    - icon: "🍮"
-      label: "出店ブース"
-    - icon: "🏳️"
-      label: "本部"
-    - icon: "🍽️"
-      label: "飲食スペース"
-    - icon: "🚻"
-      label: "トイレ"
-    - icon: "🗑️"
-      label: "ゴミ箱"
-    - icon: "🪑"
-      label: "休憩所"
 
 notice:
   title: "ご来場にあたっての注意事項"

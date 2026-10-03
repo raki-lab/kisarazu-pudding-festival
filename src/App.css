@@ -677,90 +677,12 @@
   margin: 0 auto;
 }
 
-.venuemap__diagram--blurred {
-  filter: blur(6px);
-  user-select: none;
-}
-
-.venuemap__diagram-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.venuemap__image {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 14px;
-  background: rgba(43, 36, 25, 0.4);
-  color: var(--cream);
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: 0.06em;
-}
-
-.venuemap__diagram {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, minmax(64px, auto));
-  grid-template-areas:
-    'booth booth hq'
-    'booth booth food'
-    'rest toilet trash';
-  gap: 8px;
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-.venuemap__zone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  border-radius: 14px;
-  border: 1px solid var(--caramel-soft);
-  background: var(--white);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--ink);
-  padding: 14px 8px;
-  text-align: center;
-}
-
-.venuemap__zone span {
-  font-size: 1.5rem;
-}
-
-.venuemap__zone--booth {
-  grid-area: booth;
-  background: var(--custard-soft);
-}
-
-.venuemap__zone--hq {
-  grid-area: hq;
-}
-
-.venuemap__zone--food {
-  grid-area: food;
-}
-
-.venuemap__zone--rest {
-  grid-area: rest;
-}
-
-.venuemap__zone--toilet {
-  grid-area: toilet;
-}
-
-.venuemap__zone--trash {
-  grid-area: trash;
-}
-
-.venuemap__note {
-  margin: 24px auto 0;
-  max-width: 480px;
-  text-align: center;
-  font-size: 0.84rem;
-  color: var(--text-soft);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ===== 6. ご来場にあたっての注意事項 ===== */
@@ -1137,11 +1059,6 @@
 .theme-poster .section > *:not(dialog) {
   max-width: 1040px;
   margin-inline: auto;
-}
-
-.theme-poster .venuemap__zone--booth {
-  background: var(--white);
-  border-color: var(--caramel);
 }
 
 /* セクションごとに背景色を交互に切り替え（Hero=ポスター色, Vendors=薄め, VenueMap=ポスター色, Notice=薄め, Access=ポスター色, Schedule=薄め, Faq=ポスター色, Contact=薄め） */

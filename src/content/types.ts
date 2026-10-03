@@ -14,11 +14,6 @@ export interface VendorItem {
   published?: boolean
 }
 
-export interface LegendItem {
-  icon: string
-  label: string
-}
-
 export interface FaqItem {
   q: string
   a: string
@@ -68,8 +63,6 @@ export interface Content {
   }
   venueMap: {
     title: string
-    note: string
-    legend: LegendItem[]
   }
   notice: {
     title: string
