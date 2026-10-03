@@ -22,7 +22,10 @@ export function ShopCard({
         aria-haspopup="dialog"
       >
         <div className="vendor__image-wrap">
-          <span className="vendor__number" aria-hidden="true">
+          <span
+            className={`vendor__number${index < 5 ? ' vendor__number--alt' : ''}`}
+            aria-hidden="true"
+          >
             {index + 1}
           </span>
           <img

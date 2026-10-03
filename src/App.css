@@ -420,6 +420,10 @@
   box-shadow: var(--shadow-sm);
 }
 
+.vendor__number--alt {
+  background: #2fa09a;
+}
+
 .vendor__image-overlay {
   position: absolute;
   inset: 0;
