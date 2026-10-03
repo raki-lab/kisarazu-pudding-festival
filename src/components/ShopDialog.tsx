@@ -63,6 +63,12 @@ export function ShopDialog({
             ×
           </button>
           <div className="vendor-dialog__image-wrap">
+            <span
+              className={`vendor__number${index < 5 ? ' vendor__number--alt' : ''}`}
+              aria-hidden="true"
+            >
+              {index + 1}
+            </span>
             <button
               type="button"
               className="vendor-dialog__nav vendor-dialog__nav--prev"
