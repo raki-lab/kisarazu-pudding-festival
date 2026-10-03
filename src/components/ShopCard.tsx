@@ -22,6 +22,9 @@ export function ShopCard({
         aria-haspopup="dialog"
       >
         <div className="vendor__image-wrap">
+          <span className="vendor__number" aria-hidden="true">
+            {index + 1}
+          </span>
           <img
             className={`vendor__image${isPublished ? '' : ' vendor__image--blurred'}`}
             src={image}
