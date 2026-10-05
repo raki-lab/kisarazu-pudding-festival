@@ -36,14 +36,15 @@ vendors:
   note: ""
   items:
     - name: "ごはんクリエイト × 君津青葉高等学校"
-      published: false
+      published: true
       area: "木更津市大和"
       tagline: "久留里の粋"
       description: "comming soon"
-      products: "久留里の粋"
-      price: "comming soon"
+      # description: "君津青葉高校 × 舵輪の共同開発。「青葉高校だからつくれるもの」をテーマに、久留里という地域をひとつのプリンで表現しました。酒川さんの卵と青葉高校でつくったパンを使ったパンプリン、久留里の水を使った透明なレモングラスジュレ、木更津のブルーベリーソースを重ねたプリンです。"
+      products: "君津青葉高校 × 舵輪 共同開発「久留里の粋」"
+      price: "500円（税込）"
       snsLabel: "Instagramを見る"
-      snsUrl: "https://example.com/"
+      snsUrl: "https://www.instagram.com/darinkisarazu"
       imageUrl: "/pudding/ごはんクリエイト.jpg"
     - name: "かずさスモーク × 木更津総合高等学校"
       published: true
@@ -56,14 +57,15 @@ vendors:
       snsUrl: "https://www.instagram.com/kazusa_smoke/"
       imageUrl: "/pudding/かずさスモーク.jpg"
     - name: "Pergolato × 袖ヶ浦高等学校"
-      published: false
+      published: true
       area: "木更津市東太田"
       tagline: "抹茶プリン"
       description: "comming soon"
-      products: "comming soon"
-      price: "comming soon"
+      # description: "袖ケ浦高校生活デザインクッキング部 × Pergolatoの共同開発。『私が考える袖ケ浦のプリン』をテーマに、クッキング部のみんなさんとプリンの試作を重ねました。袖ケ浦市は酪農が盛んで、県内でもトップクラスを誇っていることから『ミルクプリン』をベースに決め、袖ケ浦市内のお茶屋さん有限会社 武井製茶工場の深蒸し緑茶 煎茶を使用して袖ケ浦の抹茶ミルクプリンを作成致しました。"
+      products: "袖ケ浦高校生活デザインクッキング部 × Pergolatoの共同開発『めちゃくちゃウマっちゃプリン』"
+      price: "500円（税込）"
       snsLabel: "Instagramを見る"
-      snsUrl: "https://example.com/"
+      snsUrl: "https://www.instagram.com/pergolato.official"
       imageUrl: "/pudding/Pergolato.jpg"
     - name: "オーベルジュ波太オルビス × オルカ鴨川FC × 日本航空学園鴨川キャンパス"
       published: true
@@ -220,7 +222,7 @@ vendors:
       area: "長生郡一宮町東浪見"
       tagline: "海プリン"
       description: "サーフタウン一宮町で生まれた日本初の濃厚でとろける奇跡の青い海プリン！海の青と砂浜の白をイメージ！海プリンちゃんがサーフボードに乗って海の恵みのプリンをお届けする物語。"
-      products: "海プリンキーホルダー/海プリンステッカー"
+      products: "海プリン/グアバプリン/海プリンキーホルダー/海プリンステッカー"
       price: "780円(税込)"
       snsLabel: "Instagramを見る"
       snsUrl: "https://www.instagram.com/umipurin.namioto"
