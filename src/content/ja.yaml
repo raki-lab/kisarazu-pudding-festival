@@ -378,6 +378,11 @@ partners:
       category: "supporter"
       order: 20
       publish: true
+    - id: "kisarazu-syokokai"
+      name: "木更津商工会議所"
+      category: "supporter"
+      order: 20
+      publish: true
     - id: "chiba-designer"
       name: "千葉デザイナー学院"
       category: "cooperator"
