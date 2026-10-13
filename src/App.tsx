@@ -8,6 +8,7 @@ import { Notice } from './components/Notice'
 import { Access } from './components/Access'
 import { Schedule } from './components/Schedule'
 import { Faq } from './components/Faq'
+import { Partners } from './components/Partners'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
@@ -25,6 +26,7 @@ function App() {
         <Access />
         <Schedule />
         <Faq />
+        <Partners />
       </main>
       <Contact />
       <div className="wave-divider" aria-hidden="true"></div>

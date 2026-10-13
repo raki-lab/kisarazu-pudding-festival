@@ -345,6 +345,95 @@ faq:
     # - q: "ペットは同伴できますか？"
     #   a: "ペットの同伴については確認中です。決まり次第、公式SNSでお知らせします。"
 
+# 協賛・後援・協力・主催
+# category: mainSponsor(メイン協賛) / sponsor(協賛) / supporter(後援) / cooperator(協力)
+# ・正式名称・区分・掲載許可が確認できたものだけ publish: true にしてください
+#   (このファイルは画面用データとしてそのまま配信されるため、未承認の協賛は書き込まないでください)
+# ・logoSrc は public/ に置いた提供ロゴのパス (例: "/partners/xxx.png")。未提供なら書かない(名称をテキスト表示)
+# ・websiteUrl は確定している公式URLのみ
+# ・中身のない区分は見出しごと表示されません。主催 (organizer) は常に表示されます
+partners:
+  title: "協賛・後援・協力"
+  organizer: "木更津プリンフェスティバル実行委員会"
+  categoryLabels:
+    mainSponsor: "メイン協賛"
+    sponsor: "協賛"
+    supporter: "後援"
+    cooperator: "協力"
+    organizer: "主催"
+  items:
+    - id: "gurutto-chiba"
+      name: "ぐるっと千葉"
+      category: "mainSponsor"
+      logoSrc: "/ぐるっと千葉_ロゴ.png"
+      order: 10
+      publish: true
+    - id: "kisarazu-city"
+      name: "木更津市"
+      category: "supporter"
+      order: 10
+      publish: true
+    - id: "kisarazu-kanko"
+      name: "木更津市観光協会"
+      category: "supporter"
+      order: 20
+      publish: true
+    - id: "chiba-designer"
+      name: "千葉デザイナー学院"
+      category: "cooperator"
+      order: 10
+      publish: true
+    - id: "takushoku-koryo"
+      name: "拓殖大学紅陵高等学校"
+      category: "cooperator"
+      order: 20
+      publish: true
+    - id: "kisarazu-sogo"
+      name: "木更津総合高等学校"
+      category: "cooperator"
+      order: 30
+      publish: true
+    - id: "kimitsu-aoba"
+      name: "君津青葉高等学校"
+      category: "cooperator"
+      order: 40
+      publish: true
+    - id: "sodegaura"
+      name: "袖ヶ浦高等学校"
+      category: "cooperator"
+      order: 50
+      publish: true
+    - id: "nihon-koku-kamogawa"
+      name: "日本航空高等学校 鴨川キャンパス"
+      category: "cooperator"
+      order: 60
+      publish: true
+    - id: "tomibun"
+      name: "株式会社 富分"
+      category: "cooperator"
+      order: 70
+      publish: true
+    - id: "c-pro"
+      name: "株式会社 C-PRO エンターテイメント"
+      category: "cooperator"
+      order: 80
+      publish: true
+    - id: "kuro-agency"
+      name: "株式会社 KURO エージェンシー"
+      category: "cooperator"
+      order: 90
+      publish: true
+    - id: "nancy"
+      name: "株式会社 NANCY"
+      category: "cooperator"
+      order: 100
+      publish: true
+    - id: "tobu-shotengai"
+      name: "木更津東部商店街振興組合"
+      category: "cooperator"
+      order: 110
+      publish: true
+
 contact:
   title: "SNS・お問い合わせ"
   text: "取材のお申し込みやその他ご質問など、\n公式Instagram（@kisarazupurin）のDMまでお気軽にご連絡ください。"

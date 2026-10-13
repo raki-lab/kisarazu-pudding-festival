@@ -963,6 +963,106 @@
   border-color: var(--cream);
 }
 
+/* ===== 協賛・後援・協力 ===== */
+.partners {
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  gap: 36px;
+}
+
+.partners__heading {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--caramel-deep);
+  margin-bottom: 14px;
+}
+
+.partners__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.partners__group--mainSponsor .partners__list,
+.partners__group--organizer .partners__list {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.partner {
+  min-width: 0;
+}
+
+/* 後援は件数が少ないため中央寄せ（カード幅は協力の一覧と揃える） */
+.partners__group--supporter .partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partners__group--supporter .partner {
+  flex: 0 0 calc((100% - 10px) / 2);
+}
+
+.partner__inner {
+  height: 100%;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+a.partner__inner:hover {
+  border-color: var(--caramel);
+}
+
+a.partner__inner:focus-visible {
+  outline: 2px solid var(--caramel-deep);
+  outline-offset: 2px;
+}
+
+.partner__name {
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.partner__logo {
+  width: 100%;
+  height: 56px;
+  object-fit: contain;
+}
+
+/* メイン協賛はロゴを地の上に直接のせる（枠・背景なし） */
+.partners__group--mainSponsor .partner__inner {
+  min-height: 120px;
+  background: transparent;
+  border: none;
+}
+
+.partners__group--mainSponsor .partner__logo {
+  height: 96px;
+}
+
+.partners__group--mainSponsor .partner__name {
+  font-size: 1.1rem;
+}
+
 /* ===== フッター ===== */
 .footer {
   background: var(--ink);
@@ -1019,6 +1119,14 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .partners__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .partners__group--supporter .partner {
+    flex-basis: calc((100% - 20px) / 3);
+  }
+
   .access {
     grid-template-columns: 1fr 1fr;
   }
@@ -1041,6 +1149,14 @@
 
   .vendors {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .partners__list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .partners__group--supporter .partner {
+    flex-basis: calc((100% - 30px) / 4);
   }
 }
 
@@ -1096,6 +1212,7 @@
 .theme-poster #vendors,
 .theme-poster #notice,
 .theme-poster #schedule,
+.theme-poster #partners,
 .theme-poster #contact {
   background: var(--paper-deep);
 }

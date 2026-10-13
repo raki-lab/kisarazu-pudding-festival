@@ -25,6 +25,23 @@ export interface ScheduleItem {
   description: string
 }
 
+export type PartnerCategory = 'mainSponsor' | 'sponsor' | 'supporter' | 'cooperator'
+
+export interface PartnerItem {
+  id: string
+  /** 正式名称 */
+  name: string
+  category: PartnerCategory
+  /** 提供・許諾済みのロゴのみ (public/ 配下のパス) */
+  logoSrc?: string
+  /** 確定している公式サイトURLのみ */
+  websiteUrl?: string
+  /** 区分内の並び順 (昇順) */
+  order: number
+  /** true のものだけ表示 */
+  publish: boolean
+}
+
 export interface Content {
   nav: {
     brand: string
@@ -96,6 +113,12 @@ export interface Content {
     instagramUrl: string
     xLabel: string
     xUrl: string
+  }
+  partners: {
+    title: string
+    organizer: string
+    categoryLabels: Record<PartnerCategory | 'organizer', string>
+    items: PartnerItem[]
   }
   footer: {
     copy: string
