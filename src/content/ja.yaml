@@ -420,6 +420,7 @@ partners:
       publish: true
     - id: "c-pro"
       name: "株式会社 C-PRO エンターテイメント"
+      logoSrc: "/partners/c-pro.png"
       category: "cooperator"
       order: 80
       publish: true

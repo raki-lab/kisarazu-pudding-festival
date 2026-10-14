@@ -1042,9 +1042,10 @@ a.partner__inner:focus-visible {
   overflow-wrap: anywhere;
 }
 
+/* テキストのみのカード (min-height: 64px) と高さを揃える: 40px + 上下padding 24px */
 .partner__logo {
   width: 100%;
-  height: 56px;
+  height: 40px;
   object-fit: contain;
 }
 
