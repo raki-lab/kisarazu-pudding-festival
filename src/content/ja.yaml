@@ -146,7 +146,7 @@ vendors:
       snsUrl: "https://www.instagram.com/hongo.kisarazu.factory"
       imageUrl: "/pudding/本郷ベーカリー.jpg"
     - name: "八天堂きさらづ"
-      published: false
+      published: true 
       area: "木更津市かずさ鎌足"
       tagline: "こだわりカスタードのとろけるプリン"
       description: "八天堂きさらづは、木更津市にある工場とカフェの体験型複合施設です。この度、八天堂こだわりのカスタードプリンを販売します。ビターなカラメルソースとともにお楽しみください♪"
