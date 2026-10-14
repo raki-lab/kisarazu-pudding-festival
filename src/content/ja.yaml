@@ -149,11 +149,11 @@ vendors:
       published: false
       area: "木更津市かずさ鎌足"
       tagline: "こだわりカスタードのとろけるプリン"
-      description: "comming soon"
-      products: "comming soon"
-      price: "comming soon"
+      description: "八天堂きさらづは、木更津市にある工場とカフェの体験型複合施設です。この度、八天堂こだわりのカスタードプリンを販売します。ビターなカラメルソースとともにお楽しみください♪"
+      products: "こだわりカスタードのとろけるプリン"
+      price: "180円(税込)"
       snsLabel: "Instagramを見る"
-      snsUrl: "https://example.com/"
+      snsUrl: "https://www.instagram.com/hattendo_kisarazu_official/"
       imageUrl: "/pudding/八天堂.jpg"
     - name: "ONE DROP FARM"
       published: true
@@ -409,7 +409,7 @@ partners:
       order: 50
       publish: true
     - id: "nihon-koku-kamogawa"
-      name: "日本航空高等学校 鴨川キャンパス"
+      name: "日本航空学園 鴨川キャンパス"
       category: "cooperator"
       order: 60
       publish: true
