@@ -415,6 +415,7 @@ partners:
       publish: true
     - id: "tomibun"
       name: "株式会社 富分"
+      logoSrc: "/partners/富分ロゴ.png"
       category: "cooperator"
       order: 70
       publish: true
